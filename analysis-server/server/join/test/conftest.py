@@ -13,6 +13,7 @@ TEST_NAVER_BLOG_SNS_ID = get_secret("TEST_NAVER_BLOG_SNS_ID")
 
 
 # 정상적인 이벤트
+# noinspection PyUnusedLocal
 @pytest.fixture()
 def event_origin():
     event = Event.objects.create(
@@ -64,6 +65,7 @@ def event_origin():
 
 
 # 시작날이 느린 이벤트
+# noinspection PyUnusedLocal
 @pytest.fixture()
 def event_slow():
     event = Event.objects.create(
@@ -114,6 +116,7 @@ def event_slow():
     return event
 
 
+# noinspection PyUnusedLocal
 @pytest.fixture()
 def event_hashtag():
     event = Event.objects.create(

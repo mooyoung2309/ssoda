@@ -37,6 +37,7 @@ def _parse_from_utc_timestamp_to_date_time(timestamp):
     return date_time
 
 
+# noinspection PyUnusedLocal
 def _get_interval_day_from_old_time_to_recent_time(old_time, recent_time):
     try:
         old_date_time = _parse_from_str_time_to_date_time(old_time)
@@ -47,6 +48,7 @@ def _get_interval_day_from_old_time_to_recent_time(old_time, recent_time):
     return int(interval_day)
 
 
+# noinspection PyUnusedLocal
 def _get_interval_day_from_now_to_target_date_time(target_date_time: datetime):
     try:
         now = _get_now_date()

@@ -13,6 +13,7 @@ from core.exceptions import exceptions
 
 # Report Event GET 요청
 class ReportEvent(APIView):
+    # noinspection PyUnusedLocal
     def get(self, request, pk):
         event = get_object_or_404(Event, pk=pk)
         report_event_serializer = ReportEventSerializer(event)
@@ -35,6 +36,7 @@ class ReportEvent(APIView):
 
 # Report Store GET 요청
 class ReportStore(APIView):
+    # noinspection PyUnusedLocal
     def get(self, request, pk):
         store = get_object_or_404(Store, pk=pk)
         store_report_serializer = ReportStoreSerializer(store)

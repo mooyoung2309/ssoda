@@ -2,6 +2,7 @@ import datetime
 
 
 # 이전 데이터 점수 계산 - 게시물 유지 기간, ER 지수
+# noinspection PyUnusedLocal
 def cal_time_gap(start, end):
     try:
         start_date = datetime.datetime.strptime(start, '%Y-%m-%dT%H:%M:%S')

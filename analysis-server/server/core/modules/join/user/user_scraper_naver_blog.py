@@ -11,6 +11,7 @@ def get_url(sns_id):
     return 'https://m.blog.naver.com/PostList.naver?blogId=' + sns_id
 
 
+# noinspection PyUnusedLocal
 def scrap_user(sns_id):
     """
         네이버 블로그 유저 크롤링은 모바일로 우회 크롤링이 가능함을 확인하였다.

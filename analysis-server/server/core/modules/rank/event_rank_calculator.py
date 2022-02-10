@@ -54,6 +54,7 @@ class EventRankCalculator:
     def __init__(self, event_reports):
         self._event_reports = event_reports
 
+    # noinspection PyUnusedLocal
     def get_event_ranks(self):
         try:
             event_ranks = []

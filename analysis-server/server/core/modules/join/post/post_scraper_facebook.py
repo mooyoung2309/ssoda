@@ -21,6 +21,7 @@ def get_post_id_from_facebook_url(url):
     return post_id
 
 
+# noinspection PyUnusedLocal
 def scrap_post(dummy_url):
     proxy_url = get_proxy_url(dummy_url)
     response = urlopen(proxy_url)

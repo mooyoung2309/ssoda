@@ -30,6 +30,20 @@ SW 마에스트로 12기 과정에서 로켓단🚀 팀이 개발한 SNS 해시�
 |Report|스토어 리포트|스토어 별 모든 이벤트 마케팅 지표|저장된 마케팅 지표를 통계화|
 |Rank|스토어 랭킹|모든 스토어 마케팅 리포트|저장된 마케팅 지표를 비교 정렬|
 
+## Library
+|라이브러리명|버전|목적|
+|---|---|---|
+Django|3.2.5|백엔드|
+djangorestframework|3.12.4|백엔드 라이브러리|
+celery|4.4.7|분산 및 비동기 처리|
+beautifulsoup4|4.9.3|데이터 수집|
+PyMySQL|1.0.2|mysql 사용|
+kombu|4.6.11|메시지 브로커 헬퍼|
+pytest|6.2.5|test 코드 작성|
+demjson|2.2.4|json 파싱|
+maya|0.6.1|datetime 파싱|
+
+
 ## UI
 ### 메인
 <p float="left">

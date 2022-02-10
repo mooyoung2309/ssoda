@@ -81,6 +81,7 @@ def parse_django_exception(response, exc):
 
 
 # 정의되지 않은 Exception Handler 함수
+# noinspection PyUnusedLocal
 def parse_unknown_exception(response, exc):
     unknown_error = {
         'message': 'Error is Not defined',

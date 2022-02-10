@@ -30,6 +30,7 @@ class StoreReportCalculator:
     def __init__(self, store):
         self.store = store
 
+    # noinspection PyUnusedLocal
     def get_store_report(self):
         try:
             store_report = _get_store_report(self.store)

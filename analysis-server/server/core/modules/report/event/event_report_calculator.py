@@ -82,6 +82,7 @@ def _get_calculate_report_dict(event: dict, join_posts: list):
     return calculate_report_dict
 
 
+# noinspection PyUnusedLocal
 def _get_report_dict_format(event: dict) -> dict:
     """
         {'day': {'comment_count': [],
@@ -224,6 +225,7 @@ class ReportEventCalculator:
     def __init__(self, event):
         self.event = event
 
+    # noinspection PyUnusedLocal
     def get_report_event(self):
         try:
             report_event_dict = _get_event_report_dict(self.event, self.event['join_posts'])
@@ -231,6 +233,7 @@ class ReportEventCalculator:
             raise exceptions.EventReportCalculateFailed()
         return report_event_dict
 
+    # noinspection PyUnusedLocal
     def get_event_report(self):
         try:
             event_report_dict = _get_total_report_dict(self.event['join_posts'])

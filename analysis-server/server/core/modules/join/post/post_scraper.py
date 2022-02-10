@@ -35,6 +35,7 @@ class PostScraper:
         return self.scraped_post
 
     # 스크랩 된 게시물 가져오기
+    # noinspection PyUnusedLocal
     def get_scraped_post(self):
         self.check_post_before_scrap_post()
         post_type = get_post_type_from_url(self.join_post['url'])

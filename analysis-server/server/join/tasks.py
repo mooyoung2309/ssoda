@@ -1,6 +1,7 @@
 from celery import shared_task
 
 
+# noinspection PyUnusedLocal
 @shared_task
 def task_scrap_post(pk: int) -> bool:
     from core.models import JoinPost

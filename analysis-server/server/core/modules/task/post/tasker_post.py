@@ -206,5 +206,6 @@ class PostTasker:
         print('self.get_now_task -> task_dict', task_dict)
         return now_task
 
+    # noinspection PyUnusedLocal
     def do_task(self):
         now_task = self.get_now_task()

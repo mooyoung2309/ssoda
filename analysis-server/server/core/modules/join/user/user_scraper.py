@@ -25,6 +25,7 @@ class UserScraper:
             self.scraped_user = scrap_handlers[user_type](self.join_user['sns_id'])
         return self.scraped_user
 
+    # noinspection PyUnusedLocal
     def get_scraped_user(self):
         self.check_user_before_scrap_user()
         user_type = self.join_user['type']

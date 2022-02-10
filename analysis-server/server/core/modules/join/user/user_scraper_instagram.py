@@ -12,6 +12,7 @@ def get_url(sns_id):
     return 'https://www.instagram.com/' + sns_id
 
 
+# noinspection PyUnusedLocal
 def scrap_user(sns_id):
     url = get_url(sns_id)
     proxy_url = get_proxy_url(url)

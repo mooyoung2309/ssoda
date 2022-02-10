@@ -7,6 +7,7 @@ from core.exceptions import exceptions
 
 # Reward GET 요청
 class EventRankParticipate(APIView):
+    # noinspection PyUnusedLocal
     def get(self, request, limit):
         try:
             event_reports = EventReport.objects.filter(
@@ -23,6 +24,7 @@ class EventRankParticipate(APIView):
 
 
 class EventRankReact(APIView):
+    # noinspection PyUnusedLocal
     def get(self, request, limit):
         try:
             event_reports = EventReport.objects.filter(
@@ -40,6 +42,7 @@ class EventRankReact(APIView):
 
 
 class EventRankGuestPrice(APIView):
+    # noinspection PyUnusedLocal
     def get(self, request, limit):
         try:
             event_reports = EventReport.objects.filter(

@@ -9,6 +9,7 @@ from core.modules.assist.time import _get_now_date
 from core.modules.assist.time import _parse_from_str_time_to_date_time
 
 
+# noinspection PyUnusedLocal
 def scrap_post_naver_mobile(url: str) -> dict:
     scraped_post = ScrapedPost()
     scraped_post.type = Type.NAVERBLOG

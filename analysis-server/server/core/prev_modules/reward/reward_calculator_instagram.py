@@ -18,13 +18,16 @@ def get_user_follow_point(join):
     return user_follow_point
 
 
+# noinspection PyUnusedLocal
 def get_post_hashtag_point(join):
     pass
 
 
+# noinspection PyUnusedLocal
 def get_prev_maintain_point(join):
     pass
 
 
+# noinspection PyUnusedLocal
 def get_prev_engagement_point(join):
     pass

@@ -28,6 +28,7 @@ def store_origin():
     return store
 
 
+# noinspection PyUnusedLocal
 @pytest.fixture()
 def event_origin(store_origin):
     event = Event.objects.create(

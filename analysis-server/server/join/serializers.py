@@ -30,6 +30,7 @@ class JoinPostScrapSerializer(JoinPostSerializer):
     reward = RewardSerializer()
 
     # 해시태그 리스트 파싱
+    # noinspection PyUnusedLocal
     def to_representation(self, instance):
         representation = super().to_representation(instance)
         try:

@@ -11,6 +11,7 @@ from ._scraped_post import ScrapedPost
 import json
 
 
+# noinspection PyUnusedLocal
 def scrap_post(url: str) -> dict:
     proxy_url = get_proxy_url(url)
     response = urlopen(proxy_url)

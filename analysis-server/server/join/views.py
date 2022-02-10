@@ -18,6 +18,7 @@ from join.tasks import task_scrap_post
 
 # JoinPost PUT 요청
 class JoinPostsView(APIView):
+    # noinspection PyUnusedLocal
     def put(self, request, pk):
         join_post = get_object_or_404(JoinPost, pk=pk)
         join_post_scrap_serializer = JoinPostScrapSerializer(join_post)
@@ -34,6 +35,7 @@ class JoinPostsView(APIView):
 
 # JoinUser PUT 요청
 class JoinUsersView(APIView):
+    # noinspection PyUnusedLocal
     def put(self, request, pk):
         join_user = get_object_or_404(JoinUser, pk=pk)
         join_user_scrap_serializer = JoinUserScrapSerializer(join_user)
@@ -48,6 +50,7 @@ class JoinUsersView(APIView):
 
 
 class JoinRewardFollowView(APIView):
+    # noinspection PyUnusedLocal
     def get(self, request, pk):
         join_post = get_object_or_404(JoinPost, pk=pk)
         reward_follow_serializer = JoinRewardFollowCalculatorSerializer(join_post)
@@ -63,6 +66,7 @@ class JoinRewardFollowView(APIView):
 
 
 class JoinRewardRandomView(APIView):
+    # noinspection PyUnusedLocal
     def get(self, request, pk):
         join_post = get_object_or_404(JoinPost, pk=pk)
         reward_random_serializer = JoinRewardRandomCalculatorSerializer(join_post)
